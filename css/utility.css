@@ -56,3 +56,9 @@ ul{
     opacity: 0.9;
     transition: var(--trans);
 }
+
+/* css stop transition and animation */
+.resize-animation-stopper *{
+    animation: none!important;
+    transition: none!important;
+}
