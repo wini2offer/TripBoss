@@ -66,7 +66,7 @@
     top: 2rem;
     border: none;
 }
-#navbar-close-btn:hover:{
+#navbar-close-btn:hover{
     background-color: #fff;
     color: var(--green);
 }
@@ -105,7 +105,7 @@ header{
     font-size: 1.3rem;
     line-height: 1.7;
 }
-#keyframes bounce-in-top{
+@keyframes bounce-in-top{
     0%{
         transform: translateY(-500px);
         animation-timing-function: ease-in;
@@ -131,11 +131,16 @@ header{
 90%{
     transform: translateY(0);
     animation-timing-function: ease-in;
-  }
+}
+95%{
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+}
   100%{
     transform: translateY(-8px);
     animation-timing-function: ease-out;
   }
+
 }
 .header-form{
     background: rgba(0, 0, 0, 0.5);
@@ -155,14 +160,14 @@ header{
 .header-form input[type = "date"]{
     text-transform: uppercase;
 }
-.header-form input:([type = "submit"])::placeholder{
+.header-form input:not([type = "submit"])::placeholder{
     color: #fff;
 }
 ::webkit-calender-picker-indicator{
     filter: invert(1);
 }
 .header-form .btn{
-    margin-top: 0.0rem;
+    margin-top: 0.8rem;
 }
 /* change background to scroll */
 .navbar-cng{
