@@ -26,15 +26,25 @@
     .header-title p{
         font-size: 1.4rem;
     }
-    /* .featured-row .services-row{ */
-        .featured-row{
+    .featured-row .services-row, .footer-row{
+        /* .featured-row{ */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    /* .featured-item .services-item{ */
-        .featured-item{
+    .featured-item .services-item{
+        /* .featured-item{ */
         margin: 0;
+    }
+    .footer-row{
+        text-align: left;
+    }
+    .social-links{
+        justify-content: start;
+    }
+
+    .subscibe-form form{
+        align-items: flex-start;
     }
 }
 @media screen and (min-width: 992px){
