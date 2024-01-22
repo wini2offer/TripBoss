@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
 }
 });
 
-const navbarCollapseDiv = document.getElementById('navvar-collapse');
+const navbarCollapseDiv = document.getElementById('navbar-collapse');
 const navbarShowBtn = document.getElementById('navbar-show-btn');
 const navbarCloseBtn = document.getElementById('navbar-close-btn');
 // show navbar
